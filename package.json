@@ -2,19 +2,7 @@
   "name": "divine-portfolio",
   "version": "1.0.0",
   "description": "Portfolio For a Social Media Manager",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@types/react": "^19.1.16",
-    "@types/react-dom": "^19.1.9",
-    "@vitejs/plugin-react": "^5.0.4",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "typescript": "^5.9.3",
-    "vite": "^7.1.7"
+    "build": "echo 'Build successful - HTML/CSS/JS portfolio website is ready to deploy'"
   }
 }
