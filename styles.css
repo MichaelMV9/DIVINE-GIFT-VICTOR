@@ -82,6 +82,7 @@ body {
 .loading-logo {
     width: 200px;
     height: 200px;
+    border-radius: 25px;
     object-fit: contain;
     filter: drop-shadow(0 0 30px rgba(218, 165, 32, 0.4));
     animation: glow 2s ease-in-out infinite;

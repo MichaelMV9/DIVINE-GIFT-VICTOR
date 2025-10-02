@@ -2,39 +2,39 @@
 const portfolioItems = [
     {
         id: 1,
-        title: 'Fashion Brand Campaign',
+        title: 'Laura Mercedes Hair and salon 2023-2025',
         description: 'Increased engagement by 350% through strategic content planning and influencer partnerships',
-        category: 'Social Media Strategy',
+        category: 'Social Media Manager',
     },
     {
         id: 2,
-        title: 'E-commerce Launch',
+        title: 'E-commerce Launch 2021-2024',
         description: 'Generated $500K in revenue with targeted Facebook and Instagram ad campaigns',
-        category: 'Ad Strategy',
+        category: 'Digital Marketing Strategist',
     },
     {
         id: 3,
-        title: 'Tech Startup Growth',
-        description: 'Built LinkedIn presence from 0 to 50K followers in 6 months with B2B content strategy',
-        category: 'Content Marketing',
+        title: "M's Tech Ventures 2023 - 2024",
+        description: "  •	Created and executed content calendars across Instagram and Facebook.  •	Managed paid ad campaigns with a focus on lead generation,  •	Increased brand page followers by 70% within 6 months.'",
+        category: 'Social Media Manager',
     },
     {
         id: 4,
-        title: 'Restaurant Promotion',
-        description: 'Created viral TikTok campaign resulting in 200% increase in foot traffic',
+        title: 'Donald Exotic Restaurant 2022-2024 ',
+        description: 'Created viral TikTok campaign resulting in 200% increase in customer traffic',
         category: 'Promotional Campaign',
     },
     {
         id: 5,
-        title: 'Fitness Brand Relaunch',
+        title: 'Fitness Brand Relaunch 2023-2024',
         description: 'Repositioned brand identity and grew Instagram community to 100K engaged followers',
         category: 'Brand Management',
     },
     {
         id: 6,
-        title: 'Product Launch Campaign',
-        description: 'Coordinated multi-platform campaign reaching 2M+ users with 15% conversion rate',
-        category: 'Campaign Management',
+        title: 'D.I.V Agency 2024-2025',
+        description: '	•	Designed and ran targeted ad campaigns that doubled client inquiries.   •	Managed multi-platform growth strategies for e-commerce and service-based businesses.  •	Achieved consistent ROI-focused results for clients.',
+        category: 'Digital Marketing Srategist',
     },
 ];
 
@@ -46,22 +46,24 @@ const tools = [
     { name: 'Google Analytics', icon: 'G', color: '#E37400' },
     { name: 'Adobe Photoshop', icon: 'Ps', color: '#31A8FF' },
     { name: 'Buffer', icon: 'B', color: '#168EEA' },
+    { name: 'Native Analytics', icon: 'N', color: '#E37400' },
+        { name: 'Hashtagify', icon: 'H', color: '#f58608ff' },
 ];
 
 // Testimonials Data
 const testimonials = [
     {
         id: 1,
-        name: 'Sarah Johnson',
+        name: 'Laura Omati',
         role: 'CEO',
-        company: 'Fashion Forward',
+        company: 'Laura Mercedes Hair and Beauty Salon',
         quote: 'Divine helped our brand increase engagement by 300% within 3 months. Her strategic approach and creative content ideas transformed our social media presence completely.',
     },
     {
         id: 2,
-        name: 'Michael Chen',
-        role: 'Marketing Director',
-        company: 'Tech Innovators',
+        name: 'Michael Henry Victor',
+        role: 'CEO',
+        company: " M's Tech Ventures",
         quote: 'Her ad campaigns are result-driven and professional. The ROI we achieved exceeded all expectations, and her attention to detail is unmatched.',
     },
     {
