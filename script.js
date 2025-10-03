@@ -2,7 +2,7 @@
 const portfolioItems = [
     {
         id: 1,
-        title: 'Laura Mercedes Hair and salon 2023-2025',
+        title: 'PINK LABEL LUXURY HAIR 2023-2025',
         description: 'Increased engagement by 350% through strategic content planning and influencer partnerships',
         category: 'Social Media Manager',
     },
@@ -56,7 +56,7 @@ const testimonials = [
         id: 1,
         name: 'Laura Omati',
         role: 'CEO',
-        company: 'Laura Mercedes Hair and Beauty Salon',
+        company: 'PINK LABEL LUXURY HAIR',
         quote: 'Divine helped our brand increase engagement by 300% within 3 months. Her strategic approach and creative content ideas transformed our social media presence completely.',
     },
     {
