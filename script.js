@@ -5,36 +5,42 @@ const portfolioItems = [
         title: 'PINK LABEL LUXURY HAIR 2023-2025',
         description: 'Increased engagement by 350% through strategic content planning and influencer partnerships',
         category: 'Social Media Manager',
+        link: 'https://www.instagram.com/pinkladelluxuryhair?igsh=MWdoeGhpeTQ0N3JpMw=='
     },
     {
         id: 2,
         title: 'E-commerce Launch 2021-2024',
         description: 'Generated $500K in revenue with targeted Facebook and Instagram ad campaigns',
         category: 'Digital Marketing Strategist',
+        link: '#'
     },
     {
         id: 3,
         title: "M's Tech Ventures 2023 - 2024",
         description: "  •	Created and executed content calendars across Instagram and Facebook.  •	Managed paid ad campaigns with a focus on lead generation,  •	Increased brand page followers by 70% within 6 months.'",
         category: 'Social Media Manager',
+        link: 'https://www.instagram.com/mstechventures?igsh=eTZvNmNhYnVmNjhz'
     },
     {
         id: 4,
         title: 'Donald Exotic Restaurant 2022-2024 ',
         description: 'Created viral TikTok campaign resulting in 200% increase in customer traffic',
         category: 'Promotional Campaign',
+        link: '#'
     },
     {
         id: 5,
         title: 'Fitness Brand Relaunch 2023-2024',
         description: 'Repositioned brand identity and grew Instagram community to 100K engaged followers',
         category: 'Brand Management',
+        link: '#'
     },
     {
         id: 6,
         title: 'D.I.V Agency 2024-2025',
         description: '	•	Designed and ran targeted ad campaigns that doubled client inquiries.   •	Managed multi-platform growth strategies for e-commerce and service-based businesses.  •	Achieved consistent ROI-focused results for clients.',
         category: 'Digital Marketing Srategist',
+        link: '#'
     },
 ];
 
@@ -58,7 +64,6 @@ const testimonials = [
         role: 'CEO',
         company: 'PINK LABEL LUXURY HAIR',
         quote: 'Divine helped our brand increase engagement by 300% within 3 months. Her strategic approach and creative content ideas transformed our social media presence completely.',
-        link: 'https://www.instagram.com/pinkladelluxuryhair?igsh=MWdoeGhpeTQ0N3JpMw=='
     },
     {
         id: 2,
@@ -66,7 +71,6 @@ const testimonials = [
         role: 'CEO',
         company: " M's Tech Ventures",
         quote: 'Her ad campaigns are result-driven and professional. The ROI we achieved exceeded all expectations, and her attention to detail is unmatched.',
-        link: 'https://www.instagram.com/mstechventures?igsh=eTZvNmNhYnVmNjhz'
     },
     {
         id: 3,
@@ -74,7 +78,6 @@ const testimonials = [
         role: 'Founder',
         company: 'Wellness Co.',
         quote: 'Working with Divine has been a game changer. She understands our brand voice perfectly and consistently delivers content that resonates with our audience.',
-        link: '#'
     },
 ];
 
@@ -111,8 +114,13 @@ function initializePortfolio() {
         portfolioItem.className = 'portfolio-item';
         portfolioItem.style.transitionDelay = `${index * 0.1}s`;
 
+        const cardElement = item.link && item.link !== '#' ? 'a' : 'div';
+        const linkAttrs = item.link && item.link !== '#'
+            ? `href="${item.link}" target="_blank" rel="noopener noreferrer"`
+            : '';
+
         portfolioItem.innerHTML = `
-            <div class="portfolio-card">
+            <${cardElement} class="portfolio-card" ${linkAttrs}>
                 <div class="card-header">
                     <span class="category">${item.category}</span>
                 </div>
@@ -125,7 +133,7 @@ function initializePortfolio() {
                         </svg>
                     </div>
                 </div>
-            </div>
+            </${cardElement}>
         `;
 
         portfolioGrid.appendChild(portfolioItem);
@@ -162,10 +170,7 @@ function initializeTestimonials() {
 
     // Create testimonial cards
     testimonials.forEach((testimonial, index) => {
-        const card = document.createElement('a');
-        card.href = testimonial.link;
-        card.target = testimonial.link !== '#' ? '_blank' : '';
-        card.rel = testimonial.link !== '#' ? 'noopener noreferrer' : '';
+        const card = document.createElement('div');
         card.className = `testimonial-card ${index === 0 ? 'active' : ''}`;
 
         const initials = testimonial.name.split(' ').map(n => n[0]).join('');
