@@ -755,6 +755,15 @@ body {
     transform: translateX(100px) scale(0.9);
     transition: all 0.6s ease;
     pointer-events: none;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.testimonial-card:hover {
+    border-color: rgba(255, 215, 0, 0.4);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.12), 0 0 50px rgba(218, 165, 32, 0.15);
 }
 
 .testimonial-card.active {
@@ -762,6 +771,10 @@ body {
     transform: translateX(0) scale(1);
     pointer-events: auto;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1), 0 0 40px rgba(218, 165, 32, 0.1);
+}
+
+.testimonial-card.active:hover {
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.12), 0 0 50px rgba(218, 165, 32, 0.15);
 }
 
 .testimonial-card.prev {

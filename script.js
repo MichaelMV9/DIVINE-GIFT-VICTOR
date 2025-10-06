@@ -58,6 +58,7 @@ const testimonials = [
         role: 'CEO',
         company: 'PINK LABEL LUXURY HAIR',
         quote: 'Divine helped our brand increase engagement by 300% within 3 months. Her strategic approach and creative content ideas transformed our social media presence completely.',
+        link: 'https://www.instagram.com/pinkladelluxuryhair?igsh=MWdoeGhpeTQ0N3JpMw=='
     },
     {
         id: 2,
@@ -65,6 +66,7 @@ const testimonials = [
         role: 'CEO',
         company: " M's Tech Ventures",
         quote: 'Her ad campaigns are result-driven and professional. The ROI we achieved exceeded all expectations, and her attention to detail is unmatched.',
+        link: 'https://www.instagram.com/mstechventures?igsh=eTZvNmNhYnVmNjhz'
     },
     {
         id: 3,
@@ -72,6 +74,7 @@ const testimonials = [
         role: 'Founder',
         company: 'Wellness Co.',
         quote: 'Working with Divine has been a game changer. She understands our brand voice perfectly and consistently delivers content that resonates with our audience.',
+        link: '#'
     },
 ];
 
@@ -159,7 +162,10 @@ function initializeTestimonials() {
 
     // Create testimonial cards
     testimonials.forEach((testimonial, index) => {
-        const card = document.createElement('div');
+        const card = document.createElement('a');
+        card.href = testimonial.link;
+        card.target = testimonial.link !== '#' ? '_blank' : '';
+        card.rel = testimonial.link !== '#' ? 'noopener noreferrer' : '';
         card.className = `testimonial-card ${index === 0 ? 'active' : ''}`;
 
         const initials = testimonial.name.split(' ').map(n => n[0]).join('');
