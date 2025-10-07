@@ -5,21 +5,15 @@ const portfolioItems = [
         title: 'PINK LABEL LUXURY HAIR 2023-2025',
         description: 'Increased engagement by 350% through strategic content planning and influencer partnerships',
         category: 'Social Media Manager',
-        link: 'https://www.instagram.com/pinkladelluxuryhair?igsh=MWdoeGhpeTQ0N3JpMw=='
+        link: 'https://drive.google.com/drive/folders/1smHtT9KHYCRI7OlxnFM5JRdbN3_AmtEH'
     },
-    {
-        id: 2,
-        title: 'E-commerce Launch 2021-2024',
-        description: 'Generated $500K in revenue with targeted Facebook and Instagram ad campaigns',
-        category: 'Digital Marketing Strategist',
-        link: '#'
-    },
+
     {
         id: 3,
         title: "M's Tech Ventures 2023 - 2024",
         description: "  •	Created and executed content calendars across Instagram and Facebook.  •	Managed paid ad campaigns with a focus on lead generation,  •	Increased brand page followers by 70% within 6 months.'",
         category: 'Social Media Manager',
-        link: 'https://www.instagram.com/mstechventures?igsh=eTZvNmNhYnVmNjhz'
+        link: 'https://drive.google.com/drive/folders/1n0z1V58OBI1ipQlhQJbZMEgLYTfmp_az'
     },
     {
         id: 4,
